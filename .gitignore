@@ -1,0 +1,101 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+!temp/README*
+
+# Ignore simulink real time folders
+*_maci64/
+*_rtt/
+*_sldrt_ert_maci64/
+*sldrt_maci64/
+*_rtw/
+**_rtw/
+*.rxm64
+*.slxc
+*.prj
+~$*.doc*
+~$*.ppt*
+~$*.xls* # Ignore word autosave files
+*.DS_store
+
+
+# Ignore vs code stuff
+**/.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Ignore files starting with a * (personal preference)
+\**
+
+# Ignore build folder
+src/build
+src/managed_components
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.so
+*.mex*
+*.mexmaci64
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Ignore latex comilation files
+*.aux*
+*.bbl*
+*.blg*
+*.log*
+*.synctex.gz*
+*.synctex(busy)
+*.thm*
+*.out*
+*.spl*
+*-eps-converted-to.pdf*
+*.graffle
+*.loc
+*.soc
+*.ilg
+*.lof
+*.lot
+*.nlo
+*.nls
+*.toc
+
+# Temporary
+
+# Movie
+*.mov
+*.mp4
+*.ppt
+*.pptx

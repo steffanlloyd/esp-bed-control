@@ -1,0 +1,12 @@
+## IDF Component Manager Manifest File
+dependencies:
+  espressif/esp_rainmaker:
+    path: components/esp_rainmaker
+    git: https://github.com/espressif/esp-rainmaker.git
+  espressif/esp_schedule:
+    path: components/esp_schedule
+    git: https://github.com/espressif/esp-rainmaker.git
+  espressif/json_generator: ^1
+  espressif/json_parser: =1.0.0
+  espressif/qrcode: ^0.1.0
+  espressif/rmaker_common: ^1

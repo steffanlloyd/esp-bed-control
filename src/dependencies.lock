@@ -1,0 +1,53 @@
+dependencies:
+  espressif/esp_rainmaker:
+    component_hash: 7dd328b8f87eee6a6e0ee782095789a4ea0d06f409199286a2f104eebdc9646c
+    source:
+      git: https://github.com/espressif/esp-rainmaker.git
+      path: components/esp_rainmaker
+      type: git
+    version: fe94cc6994c4d012bad3ce04d6ae07b616894714
+  espressif/esp_schedule:
+    component_hash: 5b2368654632b1f02cefa4a86556fae61550e31984c8b3afb4de62b9d9149ba3
+    source:
+      git: https://github.com/espressif/esp-rainmaker.git
+      path: components/esp_schedule
+      type: git
+    version: fe94cc6994c4d012bad3ce04d6ae07b616894714
+  espressif/json_generator:
+    component_hash: 41da0ab732877184092676c50b5f3f3bf37ad783de2f9c27e441944e01b7d51b
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.1.1
+  espressif/json_parser:
+    component_hash: 2130029a8c005ba12476c5b5ae5c1c4589cb0c171f8100644d1ab883434eb91f
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.0.0
+  espressif/mdns:
+    component_hash: 2e95568e6fb1b1e5933217556db18b29affd4f706a6d90636fbb88dd32fc3e29
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.0.7
+  espressif/qrcode:
+    component_hash: e07c05f9129250d79c62957c02e2f67d3485e917e6953cbc6637324b3a47ea7f
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 0.1.0
+  espressif/rmaker_common:
+    component_hash: 297f4040d28475a5dfdd5c6f3280eb0a654aab1308845aa8dc6ad502b9ce3841
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.2.0
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.0.0
+manifest_hash: 0c0dfe55ef0469b51edc3d25c3cf37bb3df0eccfd653d28881acba14430eb3eb
+target: esp32s3
+version: 1.0.0
