@@ -13,7 +13,7 @@ The device itself is designed to be modular for use on a wide variety of beds. I
 
 The hookup diagram is shown below.
 
-[INCLUDE IMAGE HERE]
+![Image of ESP Bed Control Hookup](img/hookup.jpg)
 
 The entire device is housed inside a 3D printed shell. The STL files for this shell are included in the /cad folder.
 
