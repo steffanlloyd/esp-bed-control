@@ -45,6 +45,7 @@
 # Ignore build folder
 src/build
 src/managed_components
+sdkconfig
 
 # Compiled source #
 ###################

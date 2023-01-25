@@ -44,18 +44,19 @@ To flash the ESP box, follow these steps.
 1. Open/Install VScode, and install the Espressif IDE plugin. [Instructions here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html). You may take some time to get familiar with the programming environment.
 2. Next, setting up development environment. Please refer to [ESP-IDF (release/v5.0)](https://docs.espressif.com/projects/esp-idf/en/release-v4.4/esp32s3/get-started/index.html#installation-step-by-step) Installation Step by Step.
 3. Run command ``git clone --recursive https://github.com/espressif/esp-box.git`` somewhere on your machine to download the code of this project and then switch the ESP-IDF version to specified version.
-4. Open up the ``/src`` folder and link the "components" of the project in the IDE to the folder location in the previous step, ``esp-box/components``.
-5. Setup the ESP-S3. In VS code, open the ESP-IDF Terminal (it may already be open, otherwise there is a button in the bottom that opens it). Then type in ``idf.py menuconfig``. This will open the configuration for the ESP device. 
-  a. [... FILL OUT THIS SECTION LATER ...]
-6. Connect, build and flash the device.
+4. Open up the ``/src`` folder and link the "components" of the project in ``CMakeLists.txt``. E.g., replace the lines
+  ```
+  set(EXTRA_COMPONENT_DIRS
+      path/to/esp-box/components
+      )
+  ```
+5. Connect, build and flash the device.
 
 ## Customizing the voice commands
 
-To customize the voice commands you need to run the ``idf.py menuconfig`` command above, and customize the commands that the board listens to 
+In VS code, open the ESP-IDF Terminal (it may already be open, otherwise there is a button in the bottom that opens it). To customize the voice commands you need to run the ``idf.py menuconfig`` command, and customize the commands that the board listens to.  This is done under the ``ESP Speech Recognition`` menu item, followed by ``Add English speech commands``. You may also customize the wakeword under the ``Select wake words`` menu item.
 
-You will need to generate the [SOMETHING TEXT] for each voice command. Description for how to do this is included [FILL IN].
-
-[FINISH THIS LATER]
+You will need to generate the G2P phrase for each voice command. A description of how to do this is given in ``esp-box/components/esp-sr/tool``. A list of the G2P commands for all the default commands are given in ``docs/commands.xlsx``.
 
 Once this is complete, you should modify the handling of each of these voice commands with appropriate modifications to ``app/app_sr_handler.c``. Each voice command in the menuconfig settings is keyed to its ID number, so the ``app_sr_handler`` code simply runs that ID through a switch statement to run the appropriate code.
 
