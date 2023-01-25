@@ -17,6 +17,8 @@ The hookup diagram is shown below.
 
 The entire device is housed inside a 3D printed shell. The STL files for this shell are included in the /cad folder.
 
+Documentation can be found in ``docs/instructions.pdf``.
+
 ## Available Commands
 
 When you plug in the ESP box (after its been flashed and assembled), it will startup for a short period then "ding" to indicate that it is ready. It can then be woken with the wake word "Hi E.S.P.". Once it has woken, any of the following commands may be issued:
