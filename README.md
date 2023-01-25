@@ -2,6 +2,8 @@
 
 This project defines a voice-control module designed to allow voice control of hospital beds for. This allows patients who are unable to use the pendant normally attached to the bed to adjust their bed position themselves.
 
+![Image of ESP Bed Control Box](img/image.jpg)
+
 The device is based on the ESP BOX by espressif. This is a self-contained unit that includes an ESP32-S3, speakers, a microphone, and a screen. It also includes software for voice control.
 
 The device itself is designed to be modular for use on a wide variety of beds. It consists of 3 major components:
