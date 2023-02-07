@@ -46,6 +46,7 @@
 src/build
 src/managed_components
 sdkconfig
+*.lock
 
 # Compiled source #
 ###################
